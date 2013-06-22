@@ -50,7 +50,7 @@ slugg.safe "make url"
 # options
 {
   separator: '-', # define custom separator
-  stripper: ''    # strip text, allows String or Regexp
+  stripper: ''    # strip text, allows String and Regexp
 }
 ```
 
