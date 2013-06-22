@@ -1,5 +1,8 @@
 # Slugg
 
+[![Gem version](https://badge.fury.io/rb/slugg.png)](https://rubygems.org/gems/slugg)
+[![Build Status](https://secure.travis-ci.org/artemeff/slugg.png)](https://travis-ci.org/artemeff/slugg)
+
 Make safety urls from strings
 
 ## Installation
