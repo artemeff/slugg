@@ -4,8 +4,8 @@ module Slugg
 
     def initialize options = {}
       @options = {
-       :separator => "-",
-       :stripper  => ""
+       separator: "-",
+       stripper: ""
       }.merge options
     end
 

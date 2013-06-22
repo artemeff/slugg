@@ -19,7 +19,7 @@ describe Slugg::Sanitizer do
   describe "#safe" do
     context "with default options" do
       let(:safe) do
-        -> (string) { described_class.new.safe string }
+        Proc.new { |string| described_class.new.safe string }
       end
 
       it "replace with separator" do
@@ -41,7 +41,7 @@ describe Slugg::Sanitizer do
 
     context "with custom separator" do
       let(:safe) do
-        -> (string, separator) do
+        Proc.new do |string, separator|
           described_class.new(separator: separator).safe string
         end
       end
@@ -53,7 +53,7 @@ describe Slugg::Sanitizer do
 
     context "with custom stripper" do
       let(:safe) do
-        -> (string, stripper) do
+        Proc.new do |string, stripper|
           described_class.new(stripper: stripper).safe string
         end
       end
